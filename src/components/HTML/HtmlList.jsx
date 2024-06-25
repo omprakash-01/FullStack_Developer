@@ -85,7 +85,9 @@ function HtmlList() {
             </div>
             <table>
               <thead>
+                <tr>
                 <th colSpan={2}>Start Atrribute</th>
+                </tr>
               </thead>
               <tbody>
                 <tr>
@@ -103,7 +105,7 @@ function HtmlList() {
             <b>Syntax:</b> reversed</p>
             <table>
               <thead>
-                <th colSpan={2}>Reversed Attribut</th>
+                <tr><th colSpan={2}>Reversed Attribut</th></tr>
               </thead>
               <tbody>
                 <tr>
@@ -137,7 +139,9 @@ function HtmlList() {
           <div className="image">
             <table>
               <thead>
+              <tr>
               <th colSpan={2}>Type Attribute</th>
+              </tr>
               </thead>
               <tbody>
                 <tr>
@@ -160,7 +164,10 @@ function HtmlList() {
         <div className="image">
           <table>
             <thead>
+            <tr>
+
               <th colSpan={2}>Description List</th>
+            </tr>
             </thead>
             <tbody>
               <tr>
@@ -179,7 +186,7 @@ function HtmlList() {
             <Link to="/html/htmlTags">Previous Page</Link>
           </div>
           <div className="btn">
-            <Link to="">Next Page</Link>
+            <Link to="/html/htmltextformating">Next Page</Link>
           </div>
         </div>
       </div>

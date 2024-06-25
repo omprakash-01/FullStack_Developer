@@ -86,8 +86,11 @@ function HtmlTags() {
           <h2>Type of elements</h2>
           <table>
             <thead>
+            <tr>
               <th>Block level element</th>
               <th>Inline level element</th>
+
+            </tr>
             </thead>
             <tbody>
               <tr>
@@ -147,8 +150,11 @@ function HtmlTags() {
           <div className="image">
             <table>
               <thead>
+              <tr>
                 <th>Input Code</th>
                 <th>Output</th>
+
+              </tr>
               </thead>
               <tbody>
                 <tr>
