@@ -107,12 +107,12 @@ function HtmlTextFormating() {
                         <div className="image">
                             <img src={HtmlTextFormatingCode} 
                             onClick={()=>openModal(HtmlTextFormatingCode)} style={{cursor:'pointer'}}
-                            alt="" />
+                            alt="HtmlTextFormatingCode" />
                         </div>
                     </td>
                     <td>
                         <div className="image">
-                            <img src={HtmlTextFormatingSolution} alt="" onClick={()=>openModal(HtmlTextFormatingSolution)} style={{cursor:'pointer'}} />
+                            <img src={HtmlTextFormatingSolution} alt="HtmlTextFormatingSolution" onClick={()=>openModal(HtmlTextFormatingSolution)} style={{cursor:'pointer'}} />
                         </div>
                     </td>
                 </tr>
@@ -125,7 +125,7 @@ function HtmlTextFormating() {
             <Link to="/html/htmllist">Previous Page</Link>
           </div>
           <div className="btn">
-            <Link to="">Next Page</Link>
+            <Link to="/html/htmlimage">Next Page</Link>
           </div>
         </div>
      </div> 

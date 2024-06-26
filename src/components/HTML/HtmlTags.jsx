@@ -164,10 +164,10 @@ function HtmlTags() {
                 </tr>
                 <tr>
                   <td>
-                    <img src={htmlheading} alt="" onClick={()=> openModal(htmlheading)} style={{cursor:'pointer'}} />
+                    <img src={htmlheading} alt="htmlheading" onClick={()=> openModal(htmlheading)} style={{cursor:'pointer'}} />
                   </td>
                   <td>
-                    <img src={HtmlheadingSolution} alt=""  onClick={function(){
+                    <img src={HtmlheadingSolution} alt="HtmlheadingSolution"  onClick={function(){
                       openModal(HtmlheadingSolution);
                     }} style={{cursor:'pointer'}}/>
                   </td>
@@ -179,10 +179,10 @@ function HtmlTags() {
                 </tr>
                 <tr>
                   <td>
-                    <img src={paratag} alt="" onClick={()=> openModal(paratag)} style={{cursor:'pointer'}}/>
+                    <img src={paratag} alt="paratag" onClick={()=> openModal(paratag)} style={{cursor:'pointer'}}/>
                   </td>
                   <td>
-                    <img src={paratagsolution} alt=""  onClick={function(){
+                    <img src={paratagsolution} alt="paratagsolution"  onClick={function(){
                       openModal(paratagsolution);
                     }} style={{cursor:'pointer'}}/>
                   </td>

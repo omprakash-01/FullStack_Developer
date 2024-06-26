@@ -6,6 +6,7 @@ import Introduction from './Introduction/Introduction';
 import HtmlTags from './HTML/HtmlTags';
 import HtmlList from './HTML/HtmlList';
 import HtmlTextFormating from './HTML/HtmlTextFormating';
+import HtmlImage from './HTML/HtmlImage';
 
 
 function Home() {
@@ -18,6 +19,7 @@ function Home() {
         <Route path="/html/htmltags"  element ={<HtmlTags/>} />
         <Route path="/html/htmllist" element ={<HtmlList/>}/>
         <Route path="/html/htmltextformating" element={<HtmlTextFormating/>}/>
+        <Route path="/html/htmlimage" element={<HtmlImage/>}/>
         
       </Routes>
     </>

@@ -60,7 +60,7 @@ function HtmlList() {
                   <td>
                     <img
                       src={HtmlOrderListTypeAttributeCode}
-                      alt=""
+                      alt="HtmlOrderListTypeAttributeCode"
                       onClick={() => openModal(HtmlOrderListTypeAttributeCode)}
                       style={{ cursor: 'pointer' }}
                     />
@@ -68,7 +68,7 @@ function HtmlList() {
                   <td>
                     <img
                       src={HtmlOrderListTypeAttribute}
-                      alt=""
+                      alt="HtmlOrderListTypeAttribute"
                       onClick={() => openModal(HtmlOrderListTypeAttribute)}
                       style={{ cursor: 'pointer' }}
                     />
@@ -91,9 +91,9 @@ function HtmlList() {
               </thead>
               <tbody>
                 <tr>
-                  <td><img src={HtmlOrderListStartAttributeCode} alt="" onClick={()=>openModal(HtmlOrderListStartAttributeCode)} style={{cursor:'pointer'}} /></td>
+                  <td><img src={HtmlOrderListStartAttributeCode} alt="HtmlOrderListStartAttributeCode" onClick={()=>openModal(HtmlOrderListStartAttributeCode)} style={{cursor:'pointer'}} /></td>
                   <td>
-                    <img src={HtmlOrderListStartAttributeSolution} alt=""  onClick={function(){
+                    <img src={HtmlOrderListStartAttributeSolution} alt="HtmlOrderListStartAttributeSolution"  onClick={function(){
                       openModal(HtmlOrderListStartAttributeSolution)
                     }} style={{cursor:'pointer'}}/>
                   </td>
@@ -109,8 +109,8 @@ function HtmlList() {
               </thead>
               <tbody>
                 <tr>
-                  <td><img src={HtmlOrderListReversedAttributeCode} alt=""  onClick={()=>openModal(HtmlOrderListReversedAttributeCode)} style={{cursor:'pointer'}}/></td>
-                  <td> <img src={HtmlOrderListReversedAttributeSolution} alt="" onClick={function(){
+                  <td><img src={HtmlOrderListReversedAttributeCode} alt="HtmlOrderListReversedAttributeCode"  onClick={()=>openModal(HtmlOrderListReversedAttributeCode)} style={{cursor:'pointer'}}/></td>
+                  <td> <img src={HtmlOrderListReversedAttributeSolution}alt="HtmlOrderListReversedAttributeSolution" onClick={function(){
                     openModal(HtmlOrderListReversedAttributeSolution)
                   }} style={{cursor:'pointer'}}/></td>
                 </tr>
@@ -145,8 +145,8 @@ function HtmlList() {
               </thead>
               <tbody>
                 <tr>
-                  <td><img src={HtmlUnorderListTypeAttributeCode} alt="" onClick={()=>openModal(HtmlUnorderListTypeAttributeCode)} style={{cursor:'pointer'}}/></td>
-                  <td><img src={HtmlUnorderListTypeAttributeSolution} alt=""  onClick={function(){
+                  <td><img src={HtmlUnorderListTypeAttributeCode} alt="HtmlUnorderListTypeAttributeCode" onClick={()=>openModal(HtmlUnorderListTypeAttributeCode)} style={{cursor:'pointer'}}/></td>
+                  <td><img src={HtmlUnorderListTypeAttributeSolution} alt="HtmlUnorderListTypeAttributeSolution"  onClick={function(){
                     openModal(HtmlUnorderListTypeAttributeSolution)
                   }} style={{cursor:'pointer'}}/></td>
                 </tr>
@@ -171,8 +171,8 @@ function HtmlList() {
             </thead>
             <tbody>
               <tr>
-                <td><img src={DescripitionListCode} alt=""  onClick={()=>openModal(DescripitionListCode)} style={{cursor:'pointer'}}/></td>
-                <td><img src={DescripitionListSolution} alt="" onClick={function(){
+                <td><img src={DescripitionListCode} alt="DescripitionListCode"  onClick={()=>openModal(DescripitionListCode)} style={{cursor:'pointer'}}/></td>
+                <td><img src={DescripitionListSolution} alt="DescripitionListSolution" onClick={function(){
                   openModal(DescripitionListSolution)
                 }} style={{cursor:'pointer'}}/></td>
               </tr>
