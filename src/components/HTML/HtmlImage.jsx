@@ -156,7 +156,7 @@ function HtmlImage() {
             <Link to="/html/htmltextformating">Previous Page</Link>
           </div>
           <div className="btn">
-            <Link to="">Next Page</Link>
+            <Link to="/html/htmlhyperlink">Next Page</Link>
           </div>
         </div>
       </div>
