@@ -45,7 +45,7 @@ function HtmlHyperLink() {
             <Link to="/html/htmlimage">Previous Page</Link>
           </div>
           <div className="btn">
-            <Link to="">Next Page</Link>
+            <Link to="/html/htmltable">Next Page</Link>
           </div>
         </div>
         <ImageModal isOpen={isModalOpen} src={modalImageSrc} onClose={closeModal} />

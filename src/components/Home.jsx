@@ -8,6 +8,7 @@ import HtmlList from './HTML/HtmlList';
 import HtmlTextFormating from './HTML/HtmlTextFormating';
 import HtmlImage from './HTML/HtmlImage';
 import HtmlHyperLink from './HTML/HtmlHyperLink';
+import HtmlTable from './HTML/HtmlTable';
 
 
 function Home() {
@@ -22,6 +23,7 @@ function Home() {
         <Route path="/html/htmltextformating" element={<HtmlTextFormating/>}/>
         <Route path="/html/htmlimage" element={<HtmlImage/>}/>
         <Route path="/html/htmlhyperlink" element={<HtmlHyperLink/>}/>
+        <Route path="/html/htmltable" element={<HtmlTable/>}/>
         
       </Routes>
     </>
