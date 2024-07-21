@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import ClientServer from '../../assets/Introduction/client-server.png';
-import HtmlComment from '../../assets/Introduction/HtmlComment.png';
-import HtmlCommentSolution from '../../assets/Introduction/HtmlCommentSolution.png';
+import ClientServer from '../../assets/Html/client-server.png';
+import HtmlComment from '../../assets/Html/HtmlComment.png';
+import HtmlCommentSolution from '../../assets/Html/HtmlCommentSolution.png';
 import { Link } from 'react-router-dom';
 import ImageModal from '../ImageModal'; 
-import './Introduction.css';
-function Introduction() {
+import './Intro.css';
+
+function Intro() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalImageSrc, setModalImageSrc] = useState('');
 
@@ -24,13 +25,13 @@ function Introduction() {
       <h2>Webpage</h2>
       <ul className="unorder-list">
         <li>It is a digital document.</li>
-        <li>All web pages save with .html extension.</li>
+        <li>All web pages are saved with the .html extension.</li>
       </ul>
       <h2>Website</h2>
       <ul className="unorder-list">
-        <li>Collection of web pages called website.</li>
+        <li>A collection of web pages is called a website.</li>
       </ul>
-      <h2>Type of Website:</h2>
+      <h2>Types of Websites:</h2>
       <table border={2}>
         <thead>
           <tr>
@@ -41,10 +42,10 @@ function Introduction() {
         <tbody>
           <tr>
             <td>Content is not changeable.</td>
-            <td>Content is Changeable.</td>
+            <td>Content is changeable.</td>
           </tr>
           <tr>
-            <td>Same content delivered to multiple users.</td>
+            <td>The same content is delivered to multiple users.</td>
             <td>Content varies with different users.</td>
           </tr>
           <tr>
@@ -52,8 +53,8 @@ function Introduction() {
             <td>Dynamic websites are slower compared to static websites.</td>
           </tr>
           <tr>
-            <td>User database is not required.</td>
-            <td>User database is required.</td>
+            <td>A user database is not required.</td>
+            <td>A user database is required.</td>
           </tr>
           <tr>
             <td>
@@ -74,7 +75,7 @@ function Introduction() {
         </tbody>
       </table>
       <div className="image">
-        <h2>Client and Server Site</h2>
+        <h2>Client and Server Side</h2>
         <img
           src={ClientServer}
           alt="client-server"
@@ -90,13 +91,13 @@ function Introduction() {
           </thead>
           <tbody>
             <tr>
-              <td>A Client is a user.</td>
+              <td>A client is a user.</td>
               <td>It is a software program.</td>
             </tr>
             <tr>
-              <td>Client will request the desired file from the server.</td>
+              <td>The client will request the desired file from the server.</td>
               <td>
-                A server will receive the client request and respond by sending the user's desired file.
+                The server will receive the client's request and respond by sending the user's desired file.
               </td>
             </tr>
             <tr>
@@ -142,7 +143,7 @@ function Introduction() {
       <hr />
       <div className="button-container ">
         <div className="center" >
-          <Link to="/html">Next Page</Link>
+          <Link to="/html/htmlintro">Next Page</Link>
         </div>
       </div>
       <ImageModal isOpen={isModalOpen} src={modalImageSrc} onClose={closeModal} />
@@ -150,4 +151,4 @@ function Introduction() {
   );
 }
 
-export default Introduction;
+export default Intro;

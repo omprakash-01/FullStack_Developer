@@ -19,64 +19,51 @@ function HtmlTable() {
       <div className="container">
         <h1>#Table</h1>
         <ul className="unorder-list">
-          <li>Combination of row and columns.</li>
-          <li>cell intersection of row and columns.</li>
+          <li>Combination of rows and columns.</li>
+          <li>Cell intersection of rows and columns.</li>
+          <li>HTML tables allow us to display tabular data in a structured format.</li>
+          <li>In HTML, we use the &lt;table&gt;.....&lt;/table&gt; tag to create a table.</li>
+          <li>&lt;table&gt; is a container tag.</li>
+          <li>In HTML, tables are created row by row.</li>
+          <li>To represent a table row, we use the &lt;tr&gt;.....&lt;/tr&gt; tag.</li>
           <li>
-            Html table allow to display tabular data in structured format.
+            To create cells, we use &lt;th&gt;.....&lt;/th&gt; and &lt;td&gt;.....&lt;/td&gt; tags, where &lt;th&gt; represents column headings and &lt;td&gt; represents data cells.
           </li>
-          <li>
-            In html we have &lt;table&gt;.....&lt;/table&gt; tag to create
-            table.
-          </li>
-          <li>&lt;table&gt; tat is container tag.</li>
-          <li>In Html tables are created row by row.</li>
-          <li>
-            To represent table row we have &lt;tr&gt;.....&lt;/tr&gt; tag.
-          </li>
-          <li>
-            To create cell we have &lt;th&gt;.....&lt;/th&gt; and
-            &lt;tr&gt;.....&lt;/tr&gt; tag where &lt;th&gt; represent column
-            heading and &lt;td&gt; represent data cell.
-          </li>
-          <li></li>
         </ul>
         <h2>Caption Tag:</h2>
         <ol className="order-list">
-          <li>It is used to give the title to the table.</li>
-          <li>&lt;caption&gt;.....&lt;/caption&gt; tag is a container tag.</li>
-          <li>
-            We have to write &lt;caption&gt; tag with in the &lt;table&gt; tag.
-          </li>
+          <li>It is used to give a title to the table.</li>
+          <li>The &lt;caption&gt;.....&lt;/caption&gt; tag is a container tag.</li>
+          <li>We have to write the &lt;caption&gt; tag within the &lt;table&gt; tag.</li>
         </ol>
         <h2>Cell Spanning:</h2>
-        <p>We can span the cell in two ways:-</p>
+        <p>We can span cells in two ways:</p>
         <h3>Column-wise:</h3>
-        <p>To span the cell on column basis we have colspan attributes.</p>
+        <p>To span cells across columns, we use the colspan attribute.</p>
         <p>
-          <b>Syntax:</b> colspan="number of cell"
+          <b>Syntax:</b> colspan="number of cells"
         </p>
         <h3>Row-wise:</h3>
-        <p>To span the cell on row basis we have rowspan attributes.</p>
+        <p>To span cells across rows, we use the rowspan attribute.</p>
         <p>
-          <b>Syntax:</b>rowspan="number of cell"
+          <b>Syntax:</b> rowspan="number of cells"
         </p>
         <div className="note">
-          rowspan and colspan can be applied only on &lt;td&gt; and &lt;th&gt;
-          tags and not an &lt;tr&gt; tag.
+          rowspan and colspan can be applied only to &lt;td&gt; and &lt;th&gt; tags, and not to &lt;tr&gt; tags.
         </div>
-        <h2>Cell padding and cell spacing:</h2>
-        <p>These are attributes of table tag.</p>
+        <h2>Cell Padding and Cell Spacing:</h2>
+        <p>These are attributes of the table tag.</p>
         <table>
           <thead>
             <tr>
-              <th>Cell padding</th>
-              <th>Cell spacing</th>
+              <th>Cell Padding</th>
+              <th>Cell Spacing</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Space between cell border and cell content.</td>
-              <td>It is space around the cell.</td>
+              <td>Space between the cell border and cell content.</td>
+              <td>Space around the cell.</td>
             </tr>
             <tr>
               <td>
@@ -86,61 +73,55 @@ function HtmlTable() {
                 <b>Syntax:</b> cellspacing="value"
               </td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-            </tr>
           </tbody>
         </table>
-        <h2>Thead, Tbody, and Tfoot Tag:</h2>
+        <h2>Thead, Tbody, and Tfoot Tags:</h2>
         <ol className="order-list">
           <li>
             The &lt;thead&gt;, &lt;tbody&gt;, and &lt;tfoot&gt; tags are used to
-            group content within a HTML table.
+            group content within an HTML table.
           </li>
           <li>
             These tags help to structure the table and make it easier to read
             and understand.
           </li>
           <li>
-            <b>Thead tag :</b> &lt;thead&gt;.....&lt;/thead&gt; tag represent
-            the top most part of our table. The column headings of table should
-            be written within &lt;thead&gt; tag. &lt;thead&gt; should be placed
+            <b>Thead tag:</b> The &lt;thead&gt;.....&lt;/thead&gt; tag represents
+            the top part of the table. The column headings should be written within the &lt;thead&gt; tag. The &lt;thead&gt; tag should be placed
             before the &lt;tbody&gt; tag.
           </li>
           <li>
-            <b>Tbody tag :</b> &lt;tbody&gt;.....&lt;/tbody&gt; tag represent
-            the main content of our table. The row data/content should be
-            written within the &lt;tbody&gt; tag. &lt;tbody&gt; should be placed
+            <b>Tbody tag:</b> The &lt;tbody&gt;.....&lt;/tbody&gt; tag represents
+            the main content of the table. The row data/content should be
+            written within the &lt;tbody&gt; tag. The &lt;tbody&gt; tag should be placed
             after the &lt;thead&gt; tag.
           </li>
           <li>
-            <b>Tfoot tag :</b> &lt;tfoot&gt;.....&lt;/tfoot&gt; tag represent
-            the bottom part of our table. The conclusion/summary of the table
-            should be written within the &lt;tfoot&gt; tag. &lt;tfoot&gt; should
+            <b>Tfoot tag:</b> The &lt;tfoot&gt;.....&lt;/tfoot&gt; tag represents
+            the bottom part of the table. The conclusion or summary of the table
+            should be written within the &lt;tfoot&gt; tag. The &lt;tfoot&gt; tag should
             be placed after the &lt;tbody&gt; tag.
           </li>
-          <li>All of them are container tag.</li>
+          <li>All of these are container tags.</li>
         </ol>
         <div className="note">
           <p>
-            &lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt; tags are not mandatory
-            but highly recommended to use while working with tables.
+            The &lt;thead&gt;, &lt;tbody&gt;, and &lt;tfoot&gt; tags are not mandatory
+            but are highly recommended when working with tables.
           </p>
         </div>
         <h2>Column Grouping</h2>
         <ul className="unorder-list">
           <li>
-            In Html we can group the cells on column busis by using
-            &lt;colgroup&gt;.....&lt;colgroup&gt; tag.
+            In HTML, we can group columns using the &lt;colgroup&gt;.....&lt;/colgroup&gt; tag.
           </li>
-          <li>&lt;colgroup&gt; tag is a container tag.</li>
+          <li>The &lt;colgroup&gt; tag is a container tag.</li>
           <li>
-            To represent table columns in &lt;colgroup&gt; we &lt;col&gt; tag.
+            To represent table columns within the &lt;colgroup&gt; tag, we use the &lt;col&gt; tag.
           </li>
-          <li>&lt;col&gt; tag is a non-container tag.</li>
+          <li>The &lt;col&gt; tag is a non-container tag.</li>
           <li>
-            The sequence of &lt;col&gt; tag represent the table columns
+            The sequence of &lt;col&gt; tags represents the table columns
             respectively.
           </li>
         </ul>
@@ -156,9 +137,7 @@ function HtmlTable() {
           <img
             src={Htmltabletwo}
             alt="Htmltabletwo"
-            onClick={function () {
-              openModal(Htmltabletwo);
-            }}
+            onClick={() => openModal(Htmltabletwo)}
             style={{ cursor: "pointer" }}
           />
         </div>
@@ -168,7 +147,7 @@ function HtmlTable() {
             <Link to="/html/htmlhyperlink">Previous Page</Link>
           </div>
           <div className="btn">
-            <Link to="/">Next Page</Link>
+            <Link to="/html/htmlform">Next Page</Link>
           </div>
         </div>
       </div>

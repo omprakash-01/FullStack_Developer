@@ -19,7 +19,7 @@ function Navbar() {
             <li><Link to="/" onClick={(event) => scrollToSection(event, '#HTML')}>HTML</Link></li>
             <li><Link to="/skills" onClick={(event) => scrollToSection(event, '#skills')}>CSS</Link></li>
             <li><Link to="/projects" onClick={(event) => scrollToSection(event, '#projects')}>JavaScript</Link></li>
-            <li><Link to="/contact" onClick={(event) => scrollToSection(event, '#contact')}>React</Link></li>
+            <li><Link to="/react/introtoreact" onClick={(event) => scrollToSection(event, '#contact')}>React</Link></li>
           </ul>
         </div>
       </nav>
@@ -35,7 +35,7 @@ function Navbar() {
             <li><Link to="/" onClick={toggleMenu}>HTML</Link></li>
             <li><Link to="/skills" onClick={toggleMenu}>CSS</Link></li>
             <li><Link to="/projects" onClick={toggleMenu}>JavaScript</Link></li>
-            <li><Link to="/contact" onClick={toggleMenu}>React</Link></li>
+            <li><Link to="/react/introtoreact" onClick={toggleMenu}>React</Link></li>
           </ul>
         </div>
       </nav>

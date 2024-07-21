@@ -208,3 +208,24 @@ p {
   color: red;
   cursor: pointer;
 }
+.note {
+  background-color: #f9f9f9; 
+  border-left: 5px solid #4CAF50; 
+  border-right: 5px solid red; 
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 5px; 
+  text-align: center;
+}
+
+.note .unorder-list {
+  list-style-type: square; 
+  padding-left: 20px; 
+}
+
+.note .unorder-list li {
+  margin: 10px 0; 
+  font-size: 16px; 
+  line-height: 1.6; 
+  color: #333; 
+}

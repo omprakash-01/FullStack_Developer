@@ -1,0 +1,25 @@
+.container .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .center a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4286f5;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  .center a:hover {
+    background-color: #326cb5;
+    transform: scale(1.05);
+  }
+  
+  .center a:active {
+    background-color: #244a7d;
+    transform: scale(0.95);
+  }
+  

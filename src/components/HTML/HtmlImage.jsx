@@ -1,56 +1,59 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import HtmlImageTag from "../../assets/Html/HtmlImageTag.png";
-import HtmlImageTagOnline from "../../assets/Html/HtmlImageTagOnline.png"
-import HtmlImageTagAttribute from "../../assets/Html/HtmlImageTagAttribute.png"
+import HtmlImageTagOnline from "../../assets/Html/HtmlImageTagOnline.png";
+import HtmlImageTagAttribute from "../../assets/Html/HtmlImageTagAttribute.png";
 import { Link } from "react-router-dom";
-import ImageModal from '../ImageModal'; 
+import ImageModal from '../ImageModal';
 
 function HtmlImage() {
   const UlStyle = {
     marginLeft: "20px",
   };
   const [isModalOpen, setIsModalOpen] = useState(false);
-    const [modalImageSrc, setModalImageSrc] = useState('');
-    const openModal = (src) => {
-      setModalImageSrc(src);
-      setIsModalOpen(true);
-    };
-    const closeModal = () => {
-      setIsModalOpen(false);
-    };
+  const [modalImageSrc, setModalImageSrc] = useState('');
+
+  const openModal = (src) => {
+    setModalImageSrc(src);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <>
       <div className="container">
         <h1>#Image Tag:</h1>
         <ul className="unorder-list">
-          <li>&lt;img&gt; tag is used to attach image into our webpage.</li>
+          <li>&lt;img&gt; tag is used to attach an image to our webpage.</li>
           <li>It is a container tag.</li>
-          <li>It is an inline level element.</li>
+          <li>It is an inline-level element.</li>
         </ul>
-        <h2>Step for display image in webpage:</h2>
+        <h2>Steps to Display an Image on a Webpage:</h2>
         <ol className="order-list">
-          <li>First we need space which is provided by &lt;img&gt; tag.</li>
-          <li>Then, we need image path.</li>
+          <li>First, we need space, which is provided by the &lt;img&gt; tag.</li>
+          <li>Then, we need the image path.</li>
           <li>
-            <b>Syntax: </b> &lt;img src =" " alt=" " &gt;
+            <b>Syntax: </b> &lt;img src=" " alt=" " &gt;
           </li>
         </ol>
-        <h2>Type of path:</h2>
+        <h2>Types of Paths:</h2>
         <table>
           <thead>
             <tr>
-              <th>Absolulte path</th>
-              <th>Relative path</th>
+              <th>Absolute Path</th>
+              <th>Relative Path</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>
-                The path with respect to root directory is called absolulte
+                The path with respect to the root directory is called an absolute
                 path.
               </td>
               <td>
-                The path with respect to current directory is called relative
+                The path with respect to the current directory is called a relative
                 path.
               </td>
             </tr>
@@ -60,8 +63,8 @@ function HtmlImage() {
             </tr>
           </tbody>
         </table>
-        <h2>Step to attach image:</h2>
-        <h3>1.) From Local Stroage</h3>
+        <h2>Steps to Attach an Image:</h2>
+        <h3>1.) From Local Storage</h3>
         <ol className="order-list">
           <li>First, you need to create an HtmlProject folder.</li>
           <li>Inside that folder, create an index.html file.</li>
@@ -79,7 +82,12 @@ function HtmlImage() {
           <li>Your image will be displayed on the webpage.</li>
         </ol>
         <div className="image">
-          <img src={HtmlImageTag} alt="HtmlImageTag" onClick={()=>openModal(HtmlImageTag)} style={{cursor:'pointer'}} />
+          <img 
+            src={HtmlImageTag} 
+            alt="HtmlImageTag" 
+            onClick={() => openModal(HtmlImageTag)} 
+            style={{ cursor: 'pointer' }} 
+          />
         </div>
         <h3>2.) From Online:</h3>
 
@@ -98,25 +106,28 @@ function HtmlImage() {
           <li>Your image will be displayed on the webpage.</li>
         </ul>
         <div className="image">
-            <img src={HtmlImageTagOnline} alt="HtmlImageTagOnline" onClick={function(){
-              openModal(HtmlImageTagOnline)
-            }} style={{cursor:'pointer'}} />
+          <img 
+            src={HtmlImageTagOnline} 
+            alt="HtmlImageTagOnline" 
+            onClick={() => openModal(HtmlImageTagOnline)} 
+            style={{ cursor: 'pointer' }} 
+          />
         </div>
-        <h2>Attribute of image tag:</h2>
+        <h2>Attributes of the Image Tag:</h2>
         <ol className="order-list">
           <li>
             src attribute:
             <ul style={UlStyle} type="square">
-              <li>It is use to spcify the path of the image.</li>
+              <li>It is used to specify the path of the image.</li>
               <li>
-                <b>Syntax: </b>src="path"
+                <b>Syntax: </b> src="path"
               </li>
             </ul>
           </li>
           <li>
             height attribute:
             <ul style={UlStyle} type="disc">
-              <li>It is used to set height of the image.</li>
+              <li>It is used to set the height of the image.</li>
               <li>
                 <b>Syntax:</b> height="value"
               </li>
@@ -125,30 +136,35 @@ function HtmlImage() {
           <li>
             width attribute:
             <ul style={UlStyle}>
-              <li>It is used to set width of the image</li>
+              <li>It is used to set the width of the image.</li>
               <li>
-                <b>Syntax:</b> widht="value"
+                <b>Syntax:</b> width="value"
               </li>
             </ul>
           </li>
           <li>
             alt attribute:
             <ul style={UlStyle} type="square">
-              <li>It is used to provide alternative content to the image.</li>
+              <li>It is used to provide alternative content for the image.</li>
               <li>
-                When ever image is not displayed due to any reason then this
+                Whenever an image is not displayed due to any reason, this
                 alternative content will be displayed.
               </li>
-              <li>It is recommended to use alt attribute.</li>
-              <li>The alternative content should be meaning full to image.</li>
+              <li>It is recommended to use the alt attribute.</li>
+              <li>The alternative content should be meaningful for the image.</li>
               <li>
-                <b>Syntax:</b> alt="meaningfullcontent"
+                <b>Syntax:</b> alt="meaningfulcontent"
               </li>
             </ul>
           </li>
         </ol>
         <div className="image">
-            <img src={HtmlImageTagAttribute} alt="HtmlImageTagAttribute" onClick={()=> openModal(HtmlImageTagAttribute)} style={{cursor:'pointer'}} />
+          <img 
+            src={HtmlImageTagAttribute} 
+            alt="HtmlImageTagAttribute" 
+            onClick={() => openModal(HtmlImageTagAttribute)} 
+            style={{ cursor: 'pointer' }} 
+          />
         </div>
         <hr />
         <div className="btn-container">

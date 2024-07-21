@@ -1,10 +1,9 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import HtmlStructure from "../../assets/Html/HtmlStructure.png";
 import { Link } from 'react-router-dom';
-import ImageModal from '../ImageModal'; 
+import ImageModal from '../ImageModal';
 
-
-function Html() {
+function HtmlIntro() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalImageSrc, setModalImageSrc] = useState('');
 
@@ -16,21 +15,22 @@ function Html() {
   const closeModal = () => {
     setIsModalOpen(false);
   };
+
   return (
     <>
       <div className="container">
         <h1>#HTML</h1>
         <ul className="unorder-list">
           <li>
-            Html stands for <b>HyperText Markup Language</b>.
+            HTML stands for <b>HyperText Markup Language</b>.
           </li>
           <li>
-            <strong>HyperText </strong>means it is used to link different webpages.
+            <strong>HyperText</strong> means it is used to link different webpages.
           </li>
           <li>
-            <strong>Markup </strong> means it is used to create structure.
+            <strong>Markup</strong> means it is used to create structure.
           </li>
-          <li>Html is used to create the structure of the webpage.</li>
+          <li>HTML is used to create the structure of the webpage.</li>
           <li>
             It was developed by <strong>Tim Berners-Lee in 1991</strong>.
           </li>
@@ -47,24 +47,23 @@ function Html() {
             All documents must be saved with a <strong>.html</strong> extension.
           </li>
           <li>
-            Without HTML, a browser will not know how to render or display the
-            content.
+            Without HTML, a browser will not know how to render or display the content.
           </li>
         </ul>
         <div>
           <h2>W3C:</h2>
           <ol className="unorder-list">
             <li>
-              W3C stands for <strong> World Wide Web Consortium</strong>.
+              W3C stands for <strong>World Wide Web Consortium</strong>.
             </li>
             <li>It is an organization.</li>
             <li>It sets standards for the web.</li>
           </ol>
         </div>
         <div className="image">
-          <h2>Html Structure</h2>
-          <div >
-            <img src={HtmlStructure} alt="htmlStructure"  onClick={()=> openModal(HtmlStructure)} style={{cursor:'pointer'}}/>
+          <h2>HTML Structure</h2>
+          <div>
+            <img src={HtmlStructure} alt="HtmlStructure" onClick={() => openModal(HtmlStructure)} style={{ cursor: 'pointer' }} />
           </div>
           <h3>&lt;!DOCTYPE html&gt;</h3>
           <ol className="order-list">
@@ -72,15 +71,15 @@ function Html() {
             <li>It is used to specify the version of HTML that we are currently using.</li>
             <li>When we write &lt;!DOCTYPE html&gt;, it specifies that we are using HTML-5.</li>
             <li><strong>It is not an HTML tag.</strong></li>
-            <li>&lt;!DOCTYPE html&gt; must be declare in the very first line of an HTML document, before the &lt;html&gt; tag. </li>
+            <li>&lt;!DOCTYPE html&gt; must be declared in the very first line of an HTML document, before the &lt;html&gt; tag.</li>
           </ol>
-          <h3> HTML Tag:</h3>
+          <h3>HTML Tag:</h3>
           <ul className="unorder-list">
             <li>It is a root tag.</li>
             <li>All HTML code should be written within the HTML tag.</li>
           </ul>
           <h3>HEAD Tag:</h3>
-          <ol type='i' className="order-list"> 
+          <ol type='i' className="order-list">
             <li>The metadata of the website should be written within the head tag.</li>
             <li>It shows details about the webpage.</li>
           </ol>
@@ -90,13 +89,13 @@ function Html() {
           </ul>
           <hr />
         </div>
-        
+
         <div className="btn-container">
           <div className='btn'>
-            <Link to="/">Previous Page</Link>
+            <Link to="/html/intro">Previous Page</Link>
           </div>
           <div className='btn'>
-            <Link to="htmlTags">Next Page</Link>
+            <Link to="/html/htmltags">Next Page</Link>
           </div>
         </div>
         <ImageModal isOpen={isModalOpen} src={modalImageSrc} onClose={closeModal} />
@@ -105,4 +104,4 @@ function Html() {
   );
 }
 
-export default Html;
+export default HtmlIntro;
