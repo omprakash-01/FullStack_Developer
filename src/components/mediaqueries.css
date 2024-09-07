@@ -26,6 +26,9 @@
   .OrderListTypeAttribute {
     margin-left: 150px;
   }
+  h1{
+    line-height: 50px;
+  }
 }
 
 /* Tablet styles */
@@ -50,6 +53,7 @@
     
   }
 
+
 }
 
 /* Desktop styles */
@@ -66,4 +70,5 @@
     margin-left: 175px;
     
   }
+
 }

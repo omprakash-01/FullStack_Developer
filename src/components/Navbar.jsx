@@ -17,9 +17,9 @@ function Navbar() {
         <div>
           <ul className="nav-links">
             <li><Link to="/" onClick={(event) => scrollToSection(event, '#HTML')}>HTML</Link></li>
-            <li><Link to="/skills" onClick={(event) => scrollToSection(event, '#skills')}>CSS</Link></li>
-            <li><Link to="/projects" onClick={(event) => scrollToSection(event, '#projects')}>JavaScript</Link></li>
-            <li><Link to="/react/introtoreact" onClick={(event) => scrollToSection(event, '#contact')}>React</Link></li>
+            <li><Link to="/css/introtocss" onClick={(event) => scrollToSection(event, '#css')}>CSS</Link></li>
+            <li><Link to="/javascript/introtojavascript" onClick={(event) => scrollToSection(event, '#javascript')}>JavaScript</Link></li>
+            <li><Link to="/react/introtoreact" onClick={(event) => scrollToSection(event, '#react')}>React</Link></li>
           </ul>
         </div>
       </nav>
@@ -33,8 +33,8 @@ function Navbar() {
           </div>
           <ul className="menu-links">
             <li><Link to="/" onClick={toggleMenu}>HTML</Link></li>
-            <li><Link to="/skills" onClick={toggleMenu}>CSS</Link></li>
-            <li><Link to="/projects" onClick={toggleMenu}>JavaScript</Link></li>
+            <li><Link to="/css/introtocss" onClick={toggleMenu}>CSS</Link></li>
+            <li><Link to="/javascript/introtojavascript" onClick={toggleMenu}>JavaScript</Link></li>
             <li><Link to="/react/introtoreact" onClick={toggleMenu}>React</Link></li>
           </ul>
         </div>
